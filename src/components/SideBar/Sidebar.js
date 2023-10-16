@@ -33,19 +33,19 @@ const Sidebar = () => {
             <li>
               <div className="sidebar-child">
                 <FaMoneyBillAlt className="sidebar-icon" />
-                <span className='titles'>Dashboard</span>
+                <span className='titles'>Income</span>
               </div>
             </li>
             <li>
               <div className="sidebar-child">
                 <FaAward className="sidebar-icon" />
-                <span className='titles'>Dashboard</span>
+                <span className='titles'>Promote</span>
               </div>
             </li>
             <li>
               <div className="sidebar-child">
                 <FaRegQuestionCircle className="sidebar-icon" />
-                <span className='titles'>Dashboard</span>
+                <span className='titles'>Help</span>
               </div>
             </li>
           </ul>
