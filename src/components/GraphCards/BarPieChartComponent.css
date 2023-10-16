@@ -1,0 +1,83 @@
+.chart-cards{
+    display: flex;
+    
+}
+.chart-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 60%;
+    margin-right: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+  
+.pie-chart-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+
+  .options {
+    display: flex;
+    gap: 10px;
+  }
+  .chart{
+    text-align: center;
+    height: 18rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+  }
+  
+  .text{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .pie-chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+@media (max-width: 576px) {
+  .chart-cards {
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
+  .chart-card,
+  .pie-chart-card {
+    width: 75%; 
+    margin-right: 0; 
+  }
+  .chart .recharts-surface-wrapper{
+    width: 40% !important;
+  }
+  .chart .recharts-surface{
+    width: 200px;
+  }
+}

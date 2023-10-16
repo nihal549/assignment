@@ -1,0 +1,139 @@
+.product-card{
+  margin-top: 30px;
+  padding: 20px;  
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  flex-direction: row;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product-header{
+    display: flex;
+    justify-content: space-between;
+}
+.product-options{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+.selection-options{
+    margin-left: 3%;;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th {
+   
+    text-align: left;
+    padding: 8px;
+    border-bottom:1px solid rgb(236, 228, 228) ;
+  }
+  
+  table th:first-child {
+    width: 70%;
+  }
+  
+  table td {
+    
+    padding: 8px;
+  }
+  
+  .product-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .product-details p {
+    margin: 0;
+  }
+  
+ 
+  .description {
+    font-size: 12px;
+    color: #666;
+  }
+.product-image{
+  
+  height: 60px;
+  border-radius:10px ;
+}
+
+.product-grid{
+  display: flex;
+}
+.product-search-bar {
+  display: flex;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 8px;
+ 
+}
+.product-search-icon{
+  padding-left: 1px;
+ margin-top: 3%;
+ margin-right: 1%;
+}
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .product-card{
+    padding: 0;
+    width: max-content;
+  }
+  .product-header{
+    padding: 5%;
+  }
+  .product-header h2{
+    text-align: left;
+    margin: auto;
+    font-weight: normal;
+  }
+  .selection-options{
+    display: none;
+  }
+  .product-search-bar{
+    width: 50%;
+    margin-left: 20%;
+    
+  }
+  .product-search-bar input{
+    width: inherit;
+  }
+  table {
+    display: block;
+  }
+
+  table th,
+  table td {
+    display: none; 
+  }
+  table td.description {
+    display: table-cell;
+  }
+
+  table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  table tr {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-grid .description{
+    display: none;
+  }
+}

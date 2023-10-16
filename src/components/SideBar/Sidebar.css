@@ -1,0 +1,144 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background: #0f023b;
+  color: #fff;
+  padding: 30px;
+  justify-content: space-between;
+  
+  height: auto;
+}
+
+.sidebar-div {
+  height: 50%;
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+li .sidebar-child {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li .sidebar-child:hover {
+  cursor: pointer;
+  background-color: #f7f4f45e;
+}
+
+.sidebar-icon {
+  margin-right: 5%;
+}
+
+.sidebar-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sidebar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-profile {
+  background-color: rgba(252, 252, 253, 0.325);
+  margin-bottom: 30%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.sidebar-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 6%;
+  margin-left: 1%;
+}
+
+.profile-name {
+  font-size: 18px;
+  margin-left: 3%;
+}
+
+.designation {
+  position: relative;
+  bottom: 20%;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) and (min-height: 800px) {
+  .sidebar{
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) and (min-height: 1024px) {
+  .sidebar-title{
+    text-align: center;
+  }
+ .sidebar-div{
+  text-align: center;
+ }
+ .heading{
+ position: relative;
+ right: 10%;
+
+ }
+ .title-icon{
+  display: none;
+}
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 15px; 
+    height: auto;
+    justify-content: start;
+    
+  }
+  .title-icon{
+    position: relative;
+    left: 30%;
+  }
+  .heading{
+    display: none;
+  }
+  li .sidebar-child {
+    padding: 40%;
+  }
+  .sidebar-profile {
+    margin-bottom: 0; 
+  }
+  .profile-name {
+    margin-left: 10px; 
+  }
+  .name{
+    display: none;
+  }
+  .designation {
+    display: none;
+    bottom: 0; 
+  }
+  li .sidebar-child span {
+    display: none;
+  }
+  .sidebar-profile {
+    align-items: center;
+  }
+  .sidebar-profile img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 20%;
+  }
+}
