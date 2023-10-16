@@ -136,4 +136,8 @@ input[type="text"] {
   .product-grid .description{
     display: none;
   }
+ .product-grid{
+    position: relative;
+    right: 10%;
+  }
 }
